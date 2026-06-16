@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auren — Real Estate Lead Reception</title>
+  <meta name="description" content="Auren talks to every lead the moment they message, qualifies them, and matches them to your listings — day or night.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" as="style">
+  <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#" class="nav__logo" data-scroll="top" style="display: flex; align-items: center; gap: 8px;">
+      <img src="assets/logo.webp" alt="Auren Logo" style="height: 32px; width: auto;">
+      Auren
+    </a>
+    <a href="#demo" class="nav__link" data-scroll="demo">Try it live</a>
+  </header>
+
+  <main>
+    <!-- Expects background image: images/hero-bg.webp -->
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <h1 class="hero__headline">
+          <span class="hero__word">The</span>
+          <span class="hero__word">front</span>
+          <span class="hero__word">desk</span>
+          <span class="hero__word">that</span>
+          <span class="hero__word">never</span>
+          <span class="hero__word">clocks</span>
+          <span class="hero__word">out.</span>
+        </h1>
+        <p class="hero__sub">Auren talks to every lead the moment they message, qualifies them, and matches them to your listings — day or night.</p>
+        <div class="hero__actions">
+          <a href="#demo" class="btn btn--primary" data-scroll="demo">Talk to Auren</a>
+          <a href="#how" class="btn btn--secondary" data-scroll="how">How it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expects background image: images/problem-bg.webp -->
+    <section class="problem" id="problem">
+      <div class="container">
+        <p class="problem__label">The gap</p>
+        <h2 class="problem__title">Leads message at 9pm. Your inbox answers at 9am.</h2>
+        <p class="problem__body">By then they've toured three other agents' listings. Auren holds the conversation — qualifies budget, timeline, and intent — while you're showing homes or off the clock.</p>
+      </div>
+    </section>
+
+    <!-- Expects background image: images/how-bg.webp -->
+    <section class="how" id="how">
+      <div class="container how__layout">
+        <div class="how__header">
+          <p class="section-label">How Auren works</p>
+          <h2 class="how__title">Four steps between a message and a booked call.</h2>
+        </div>
+        <div class="how__track">
+          <div class="how__line">
+            <div class="how__line-fill" id="howLineFill"></div>
+          </div>
+          <ol class="how__steps">
+            <li class="how__step" data-step="1">
+              <span class="how__num">01</span>
+              <div class="how__content">
+                <h3>A lead messages</h3>
+                <p>Web chat today. Instagram and SMS next — same qualification flow, same lead log.</p>
+              </div>
+            </li>
+            <li class="how__step" data-step="2">
+              <span class="how__num">02</span>
+              <div class="how__content">
+                <h3>Auren qualifies</h3>
+                <p>Budget, timeline, buy vs. invest, must-haves — one question at a time, not an interrogation.</p>
+              </div>
+            </li>
+            <li class="how__step" data-step="3">
+              <span class="how__num">03</span>
+              <div class="how__content">
+                <h3>Matches or redirects</h3>
+                <p>Only to real listings in your inventory. Off-market asks get the closest genuine fit — never invented addresses.</p>
+              </div>
+            </li>
+            <li class="how__step" data-step="4">
+              <span class="how__num">04</span>
+              <div class="how__content">
+                <h3>Books the call</h3>
+                <p>Name, number, best time — logged automatically. You call a qualified lead, not a cold name.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- NO photo background expected -->
+    <section class="demo" id="demo">
+      <div class="container">
+        <div class="demo__header">
+          <p class="section-label">Live demo</p>
+          <h2 class="demo__title">Try it. Ask Auren anything a real lead would.</h2>
+          <p class="demo__hint">Sample listings in Harborview — budget, redirect, and booking paths all work.</p>
+        </div>
+        <div class="chat-panel">
+          <div class="chat-panel__bar">
+            <span class="chat-panel__name">Auren</span>
+            <span class="chat-panel__status">Online · qualifying leads</span>
+          </div>
+          <div class="chat-window" id="chatWindow">
+            <div class="messages" id="messages"></div>
+          </div>
+          <div class="chat-footer">
+            <div class="chips" id="chips">
+              <button type="button" class="chip" data-text="I'm looking for a home around $400k">I'm looking around $400k</button>
+              <button type="button" class="chip" data-text="I want something in Miami">I want something in Miami</button>
+              <button type="button" class="chip" data-text="I want to invest in property">I want to invest</button>
+              <button type="button" class="chip" data-text="Can I book a viewing?">Book a viewing</button>
+            </div>
+            <form class="input-bar" id="chatForm">
+              <input type="text" id="userInput" placeholder="Ask Auren anything..." autocomplete="off" aria-label="Message to Auren">
+              <button type="submit" class="send-btn" id="sendBtn" aria-label="Send message">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expects background image: images/capture-bg.webp -->
+    <section class="capture" id="capture">
+      <div class="container">
+        <p class="section-label">What gets captured</p>
+        <h2 class="capture__title">Behind every chat, a spreadsheet you didn't have to fill.</h2>
+        <div class="bento">
+          <article class="bento__cell bento__cell--wide">
+            <span class="bento__tag">chats.csv</span>
+            <h3>Every conversation, logged</h3>
+            <p>Full transcript with session ID and timestamp — audit trail for every lead touchpoint.</p>
+            <div class="bento__preview bento__preview--chat">
+              <div class="preview-row"><span class="preview-ts">2026-06-14 21:04</span><span>sess-a3f2…</span></div>
+              <div class="preview-row preview-row--msg"><span class="preview-role">Lead</span> I'm looking around $400k</div>
+              <div class="preview-row preview-row--msg"><span class="preview-role">Auren</span> Great — are you buying to live in or invest?</div>
+            </div>
+          </article>
+          <article class="bento__cell">
+            <span class="bento__tag">qualified.csv</span>
+            <h3>Qualified leads, ready to call</h3>
+            <p>Name, phone, budget, timeline — one row per booked lead.</p>
+            <div class="bento__preview bento__preview--lead">
+              <div class="lead-field"><span>Name</span><strong>Marcus Chen</strong></div>
+              <div class="lead-field"><span>Phone</span><strong>(305) 555-0142</strong></div>
+              <div class="lead-field"><span>Budget</span><strong>$400k</strong></div>
+              <div class="lead-field"><span>Timeline</span><strong>Next month</strong></div>
+            </div>
+          </article>
+          <article class="bento__cell">
+            <span class="bento__tag">unqualified.csv</span>
+            <h3>Opt-outs respected automatically</h3>
+            <p>"Not interested" and stop requests logged separately — no accidental follow-ups.</p>
+            <div class="bento__preview bento__preview--opt">
+              <div class="preview-row"><span class="preview-ts">2026-06-13 14:22</span></div>
+              <div class="preview-row preview-row--reason">Reason: Not interested / opted out</div>
+            </div>
+          </article>
+          <article class="bento__cell bento__cell--accent">
+            <span class="bento__stat">0</span>
+            <h3>One spreadsheet. Zero manual entry.</h3>
+            <p>Import CSVs into Google Sheets anytime, or sync live via webhook.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expects background image: images/closing-bg.webp -->
+    <section class="closing" id="closing">
+      <div class="container closing__inner">
+        <h2 class="closing__title">Built for one realtor at a time.</h2>
+        <p class="closing__body">Your listings. Your voice. Your lead sheet — not a shared inbox with a hundred agents.</p>
+        <a href="#demo" class="btn btn--primary" data-scroll="demo">Talk to Auren</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">Auren</span>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#how" data-scroll="how">How it works</a>
+        <a href="#demo" data-scroll="demo">Live demo</a>
+        <a href="#capture" data-scroll="capture">Lead capture</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

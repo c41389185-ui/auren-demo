@@ -1,0 +1,19 @@
+{
+  "name": "auren-demo",
+  "version": 2,
+  "builds": [
+    {
+      "src": "demo-server.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["images/**", "assets/**", "logo/**", "personality/**", "*.html", "*.css", "*.js", "*.txt"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "demo-server.mjs"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "auren-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "demo-server.mjs",
+  "scripts": { "start": "node demo-server.mjs" },
+  "engines": { "node": ">=18" }
+}
